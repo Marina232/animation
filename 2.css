@@ -1,0 +1,39 @@
+body{
+  background-color:yellow;
+}
+h1{
+  color: black;
+}
+.a{
+  width: 100px;
+  height:100px;
+  display: block;
+  margin-left: 0px;
+  margin-right: 50px ;
+  border-radius: 50%;
+  background-color: blue;
+  position: relative;
+  animation: a 0.5s infinite alternate ease;
+}
+@keyframes a {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:red; left:1100px; top:100px;}
+  50%  {background-color:red; left:200px; top:200px;}
+  75%  {background-color:red; left:0px; top:200px;}
+  100% {background-color:red; left:500px;right: 100;top:0px;}
+}
+.b{
+  width: 100px;
+  height: 50px;
+  margin-top:250px;
+  border-radius: 30%;
+  background-color: blue;
+  position: absolute;
+  animation: b 5s linear infinite alternate;
+}
+@keyframes b {
+      0% { left: 0;}
+      50%{ left : 95%;}
+      100%{ left: 0;}
+
+}
